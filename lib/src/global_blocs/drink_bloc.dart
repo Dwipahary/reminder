@@ -37,7 +37,7 @@ class DrinkBloc implements BlocBase {
   }
 
   Future<void> drinkWater() async {
-    final drink = Drink(DateTime.now(), 250);
+    final drink = Drink(DateTime.now(), _selectedDrinkAmount);
     FirestoreDrinkService.drinkWater(drink);
   }
 
